@@ -1,0 +1,6 @@
+// 更新
+_date=`date '+%Y%m%d-%H%M%S'`
+cd ~/MEGAsync/_vsCode/github/buildsys
+git add .
+git commit -m "add ${_date}"
+git push -u origin main
