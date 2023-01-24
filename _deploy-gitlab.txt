@@ -4,3 +4,9 @@ cd ~/MEGAsync/_vsCode/github/buildsys
 git add .
 git commit -m "add ${_date}"
 git push -u origin main
+
+// 重建
+cd ~/MEGAsync/_vsCode/github/
+_date=`date '+%Y%m%d-%H%M%S'`
+mv buildsystem buildsystem-${_date}
+git clone --branch master https://github.com/opitem640506/buildsys.git
